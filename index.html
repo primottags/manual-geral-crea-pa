@@ -257,11 +257,12 @@
     <li><a onclick="switchM('art')">📄 ART</a></li>
     <li><a onclick="switchM('tec')">🔧 Tecnólogos</a></li>
     <li><a onclick="switchM('dec')">📁 Decisões</a></li>
+    <li><a onclick="switchM('reg')">📗 Regimento</a></li>
   </ul>
 </nav>
 
 <section id="hero">
-  <div class="hbadge">Manual de Boas Práticas · 2026 · v13</div>
+  <div class="hbadge">Manual de Boas Práticas · 2026</div>
   <h1>Análise de Processos nas <span>Câmaras Especializadas</span></h1>
   <p class="h-sub">Guia técnico-operacional para instrução, análise e julgamento de processos ético-profissionais e administrativos nas câmaras especializadas do CREA-PA.</p>
   <div class="h-meta">
@@ -284,6 +285,7 @@
   <button class="mtab" id="mt-art" onclick="switchM('art')">📄 Interpretação de ART</button>
   <button class="mtab" id="mt-tec" onclick="switchM('tec')">🔧 Tecnólogos</button>
   <button class="mtab" id="mt-dec" onclick="switchM('dec')">📁 Decisões</button>
+  <button class="mtab" id="mt-reg" onclick="switchM('reg')">📗 Regimento Interno</button>
 </div>
 
 <!-- ═══ FUNDAMENTAÇÃO ═══ -->
@@ -1866,7 +1868,7 @@
       <div class="ci" style="background:#ede0ff">📘</div>
       <h3>Catálogo Nacional de Cursos Superiores de Tecnologia (CNCST)</h3>
       <p>Define os perfis profissionais e competências de cada curso de tecnologia (tecnólogos). Referência obrigatória para análise de extensão de atribuição e registros de tecnólogos.</p>
-      <a href="https://www.gov.br/mec/pt-br/assuntos/politicas-da-educacao-superior/pronatec/arquivos/catalogo_nacional_cursos_superiores_tecnologia_2022.pdf" onclick="window.open('https://www.gov.br/mec/pt-br/assuntos/politicas-da-educacao-superior/pronatec/arquivos/catalogo_nacional_cursos_superiores_tecnologia_2022.pdf','_blank','noopener');return false;" target="_blank" rel="noopener noreferrer" class="norma-link"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 6h8M6 2l4 4-4 4"/></svg>CNCST 2022 — PDF</a>
+      <a href="https://cncst.mec.gov.br" onclick="window.open('https://cncst.mec.gov.br','_blank','noopener');return false;" target="_blank" rel="noopener noreferrer" class="norma-link"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 6h8M6 2l4 4-4 4"/></svg>Catálogo Nacional de Cursos Superiores de Tecnologia</a>
     </div>
     <div class="card" style="border-left:4px solid var(--dou)">
       <div class="ci" style="background:#fff0b0">🔍</div>
@@ -1998,7 +2000,7 @@
       <thead><tr><th>Etapa</th><th>Ação</th><th>Norma</th></tr></thead>
       <tbody>
         <tr><td><strong>1</strong></td><td>Verificar se o título está listado como tecnólogo no Anexo da Res. 473/2002</td><td>Res. 473/2002</td></tr>
-        <tr><td><strong>2</strong></td><td>Consultar o CNCST/MEC para identificar o perfil profissional e competências do curso</td><td>CNCST 2022 / e-MEC</td></tr>
+        <tr><td><strong>2</strong></td><td>Consultar o CNCST/MEC para identificar o perfil profissional e competências do curso</td><td>CNCST 2024 / e-MEC</td></tr>
         <tr><td><strong>3</strong></td><td>Verificar se a atividade pleiteada (ART/Extensão) está dentro do campo de atuação definido pela Res. 447/2000</td><td>Res. 447/2000</td></tr>
         <tr><td><strong>4</strong></td><td>Para extensão de atribuição: verificar se o curso de pós-graduação é adequado conforme Res. 1.073/2016</td><td>Res. 1.073/2016</td></tr>
         <tr><td><strong>5</strong></td><td>Para ART: confirmar compatibilidade da atividade declarada com o título e emitir parecer fundamentado</td><td>Res. 1.160/2025 + Res. 447/2000</td></tr>
@@ -2008,7 +2010,7 @@
   </div>
 
   <div class="alt-box am fade-in"><span class="ai">📌</span>
-    <p><strong>Lembrete:</strong> Os catálogos do MEC (e-MEC e CNCST 2022) são ferramentas indispensáveis na análise de processos envolvendo tecnólogos. Acesse-os pela aba <a onclick="switchM('atr')" style="color:var(--dou);font-weight:600;cursor:pointer">🏗 Atribuições Profissionais</a> deste manual, na seção "Catálogos Nacionais de Cursos — MEC".</p>
+    <p><strong>Lembrete:</strong> Os catálogos do MEC (e-MEC e CNCST 2024) são ferramentas indispensáveis na análise de processos envolvendo tecnólogos. Acesse-os pela aba <a onclick="switchM('atr')" style="color:var(--dou);font-weight:600;cursor:pointer">🏗 Atribuições Profissionais</a> deste manual, na seção "Catálogos Nacionais de Cursos — MEC".</p>
   </div>
 
 </div>
@@ -2178,260 +2180,456 @@
     <p><strong>Entendimento consolidado (CEEC/CREA-PA):</strong> A elaboração do PGRSS <strong>compete ao Engenheiro Sanitarista</strong>, cuja formação curricular abrange os aspectos técnicos exigidos pela CONAMA 358/2005 e pela RDC ANVISA 306/2004. A atividade permanece sob fiscalização do Sistema CONFEA/CREA. A decisão PL-1701/2008 do CONFEA (indeferimento à Eng. Ambiental) não se aplica ao Eng. Sanitarista, que possui atribuições e currículo distintos. Para novos processos envolvendo PGRSS, citar a <strong>Decisão 128/2017-CEEC</strong> e a <strong>Decisão 145/2010-CEEC</strong> como fundamentos regionais.</p>
   </div>
 
-  <!-- BLOCO TEMÁTICO — COMBATE A INCÊNDIO -->
-  <div class="sh fade-in" style="margin-top:2.5rem">
-    <div class="st" style="font-size:1.1rem">🔥 Bloco Temático: Projetos de Combate a Incêndio — Habilitação Profissional
-      <small>Decisão CEEC/CREA-PA — mapeamento de profissionais habilitados por tipo de sistema</small>
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BLOCO TEMÁTICO — ENGENHARIA CIVIL / PPCI / INCÊNDIO -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div class="sh fade-in" style="margin-top:2.2rem">
+    <div class="st" style="font-size:1.1rem">🔥 Bloco Temático: Prevenção e Combate a Incêndio (PPCI)
+      <small>Atribuições para elaboração de projetos de sistemas de prevenção contra incêndio — Plenário CONFEA</small>
+    </div>
+  </div>
+  <div class="form-box fade-in" style="margin-bottom:1rem">
+    <p><strong>Contexto do tema:</strong> A exigência, por corpos de bombeiros de alguns estados, de que projetos de prevenção contra incêndio fossem elaborados exclusivamente por profissionais com especialização em Engenharia de Segurança do Trabalho foi objeto de duas decisões do Plenário do CONFEA que estabelecem o entendimento consolidado: <strong>qualquer profissional com atribuições do art. 1º da Res. 218/73 está habilitado para projetos de PPCI, dentro do escopo de sua formação profissional</strong>, independentemente de possuir especialização em Seg. do Trabalho.</p>
+    <table class="ltab">
+      <thead><tr><th>Decisão</th><th>Sessão / Ano</th><th>Interessado</th><th>Ementa e Pontos Principais</th></tr></thead>
+      <tbody>
+        <!-- PL-0489/1998 -->
+        <tr>
+          <td><strong>PL-0489/1998</strong></td>
+          <td>Plen. 1.278 · 1998</td>
+          <td>CREA-AM/RR</td>
+          <td><strong>Profissionais competentes para elaborar projetos de prevenção contra incêndios</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Profissionais com prerrogativas do <strong>art. 1º da Res. 218/73</strong> estão habilitados para PPCI, dentro de sua formação profissional</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Engenheiros e Arquitetos com pós-graduação em Eng. de Segurança do Trabalho podem requerer anotação em carteira, circunscrita à formação de base</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--dou)">▸</span><strong>Especialização em Seg. do Trabalho NÃO é pré-requisito exclusivo</strong> para projetos de incêndio</li>
+            </ul>
+          </td>
+        </tr>
+        <!-- PL-1024/2016 -->
+        <tr>
+          <td><strong>PL-1024/2016</strong></td>
+          <td>Plen. 1.433 · 2016</td>
+          <td>CCEEC (Eng. Civil)</td>
+          <td><strong>Eng. Civil tem atribuição para PPCI independente de especialização em Seg. do Trabalho</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>CREAs devem <strong>oficiar corpos de bombeiros</strong> e demais órgãos afins informando que Eng. Civis possuem atribuição para PPCI</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Res. 218/73, art. 7º: Eng. Civil desempenha atividades 01 a 18 do art. 1º referentes a edificações</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-m)">▸</span>Reincidência em negar o acesso do Eng. Civil implica notificação ao órgão</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alt-box az" style="margin-top:.8rem"><span class="ai">⚖️</span>
+      <p><strong>Entendimento consolidado:</strong> Projetos de PPCI são atribuição de qualquer Engenheiro com atribuições do art. 1º da Res. 218/73 (Civil, Eletricista, Mecânico etc.), dentro de sua formação. A especialização em Engenharia de Segurança do Trabalho é complemento, não requisito exclusivo. Em caso de negativa de corpo de bombeiros, o CREA-PA pode expedir ofício fundamentado na PL-1024/2016.</p>
     </div>
   </div>
 
-  <div class="alt-box am fade-in"><span class="ai">⚠️</span>
-    <p><strong>Contexto:</strong> Em 2015, o Corpo de Bombeiros Militares do Pará consultou o CREA-PA sobre quais profissionais possuem habilitação legal para elaborar projetos de combate a incêndio. A CEEC deliberou por unanimidade, reafirmando o entendimento do CONFEA (Dec. PL-0486/98 e PL-0383/13) e o Decreto Estadual nº 357/2007, detalhando a habilitação por sistema específico.</p>
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BLOCO TEMÁTICO — INSTALAÇÕES ELÉTRICAS / TELEFÔNICAS / LÓGICA -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div class="sh fade-in" style="margin-top:2.2rem">
+    <div class="st" style="font-size:1.1rem">📡 Bloco Temático: Instalações Telefônicas, de Lógica e Equipamentos Eletromédicos
+      <small>Habilitação profissional para instalações de telecomunicações e RT em empresas de equipamentos hospitalares — Plenário CONFEA</small>
+    </div>
   </div>
-
-  <div class="card fade-in" style="overflow-x:auto;padding:0;margin-bottom:1rem">
+  <div class="form-box fade-in" style="margin-bottom:1rem">
     <table class="ltab">
-      <thead><tr><th style="width:160px">Decisão</th><th>Ementa / Assunto</th><th>Conteúdo principal</th><th style="width:80px">Data</th></tr></thead>
+      <thead><tr><th>Decisão</th><th>Sessão / Ano</th><th>Interessado</th><th>Ementa e Pontos Principais</th></tr></thead>
       <tbody>
-        <tr style="background:#fff8f0">
-          <td>
-            <strong>0103/2015-CEEC</strong><br>
-            <span style="font-size:.68rem;color:var(--cz-m)">Ref. 252950/2015<br>Interessado: CAT/CBM-PA</span><br>
-            <span style="display:inline-block;margin-top:.3rem;font-size:.6rem;font-weight:700;background:var(--fisc);color:#fff;padding:2px 7px;border-radius:99px;letter-spacing:.05em">CEEC — Regional · Vigente</span>
-          </td>
-          <td><strong>Habilitação profissional para elaboração de projetos de combate a incêndio — mapeamento por sistema</strong></td>
-          <td>
-            <ul style="padding-left:0;list-style:none">
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--fisc)">▸</span>Reafirma Dec. PL-0486/98 do CONFEA: <em>todos os profissionais detentores das prerrogativas do art. 1º da Res. 218/73 estão habilitados para realizar projetos de prevenção contra incêndio, dentro do contexto de sua respectiva formação</em></li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--fisc)">▸</span><strong>Projeto de edificação (plantas, cortes, elevações):</strong> Engenheiros Civis</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--fisc)">▸</span><strong>Hidrantes, Sprinklers, Extintores, Hidrante/Mangotinhos, Chuveiros Automáticos:</strong> Eng. Civis, Sanitaristas, Mecânicos e especialistas em Seg. do Trabalho</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--fisc)">▸</span><strong>Elevador de Segurança, Pressurização de Escada, Resfriamento, Espuma, Gases Limpos/CO₂:</strong> Engenheiros Mecânicos (e Químicos para os dois últimos)</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--fisc)">▸</span><strong>Alarme de Incêndio, SPDA, Sistema de Detecção e Alarme:</strong> Engenheiros Eletricistas exclusivamente</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--fisc)">▸</span><strong>Iluminação de Emergência:</strong> Eng. Civis (blocos isolados) e Eng. Eletricistas (todos)</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--fisc)">▸</span>Profissionais não citados podem solicitar análise curricular à câmara competente para obter habilitação específica</li>
+        <!-- PL-0964/2002 -->
+        <tr>
+          <td><strong>PL-0964/2002</strong></td>
+          <td>Plen. 1.313 · 2002</td>
+          <td>CREA-PR</td>
+          <td><strong>Profissionais habilitados para instalações telefônicas e de lógica</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Eng. Eletricistas (arts. 8º e 9º, Res. 218/73), Eng. de Computação (Res. 380/93)</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Tecnólogos em Telefonia, Telecomunicações/Telefones e Redes, Eletrônica Industrial, Instrumentação e Controle — habilitados para instalação e manutenção (Res. 313/1986)</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-m)">▸</span>Técnicos em Eletrônica, Eletrotécnica e Telecomunicações — nos limites de suas atribuições</li>
             </ul>
           </td>
-          <td>18/06/2015</td>
+        </tr>
+        <!-- PL-1794/2015 -->
+        <tr>
+          <td><strong>PL-1794/2015</strong></td>
+          <td>Plen. 1.422 · 2015</td>
+          <td>GE Healthcare do Brasil</td>
+          <td><strong>Responsável Técnico em empresa de equipamentos eletromédicos — sem figura de "RT substituto"</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--lrj)">▸</span>O Sistema CONFEA/CREA <strong>não reconhece a figura de "responsável técnico substituto"</strong> — existe apenas o conceito de RT (Res. 336/1989)</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Fabricação de aparelhos eletromédicos: RT deve ser <strong>Eng. Eletricista</strong> (art. 9º, Res. 218/73)</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Manutenção/reparo de eletromédicos: também habilitados Tecnólogos em Automação Industrial, Eletrônica, Eletrônica Industrial, Instrumentação e Controle, Técnicos em Eletrônica, Mecatrônica e Manutenção de Equipamentos Médico-Hospitalares</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-m)">▸</span>Instalação de máquinas e equipamentos industriais: Eng., Tecnólogo ou Técnico da modalidade mecânica e metalúrgica (Anexo, Res. 473/2002)</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--cz-m)">▸</span>Extinção de RT (art. 17, Res. 336/89): empresa tem <strong>10 dias</strong> para providenciar novo RT</li>
+            </ul>
+          </td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <div class="alt-box vd fade-in"><span class="ai">✅</span>
-    <p><strong>Regra geral (CEEC/CREA-PA):</strong> A habilitação para projetos de combate a incêndio depende do <strong>tipo de sistema</strong> envolvido. Não existe profissional único habilitado para todos os sistemas. Ao analisar um processo, verificar se a ART cobre exatamente o sistema que o profissional tem formação para projetar. Fundamentos: Res. CONFEA 218/73 (art. 1º), Dec. Estadual 357/2007, Dec. PL-0486/98 e PL-0383/13.</p>
-  </div>
-
-  <!-- BLOCO TEMÁTICO — PRAD / ENG. AMBIENTAL -->
-  <div class="sh fade-in" style="margin-top:2.5rem">
-    <div class="st" style="font-size:1.1rem">🌿 Bloco Temático: PRAD — Plano de Recuperação de Áreas Degradadas
-      <small>Atribuição do Engenheiro Ambiental para elaboração e execução — CEEC/CREA-PA</small>
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BLOCO TEMÁTICO — ENGENHARIA CIVIL / BATIMETRIA / TÉCNICO EM EDIFICAÇÕES -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div class="sh fade-in" style="margin-top:2.2rem">
+    <div class="st" style="font-size:1.1rem">🏗 Bloco Temático: Atribuições do Eng. Civil — Batimetria e Técnico em Edificações
+      <small>Competências do Engenheiro Civil e limites do Técnico em Edificações — Plenário CONFEA</small>
     </div>
   </div>
-
-  <div class="alt-box az fade-in"><span class="ai">ℹ️</span>
-    <p><strong>Contexto:</strong> Em 2013, a CEEC apreciou consulta sobre as atribuições do Engenheiro Ambiental para elaborar e executar Planos de Recuperação de Áreas Degradadas (PRAD). A decisão, por unanimidade, foi favorável — com uma exceção importante relativa ao plantio.</p>
-  </div>
-
-  <div class="card fade-in" style="overflow-x:auto;padding:0;margin-bottom:1rem">
+  <div class="form-box fade-in" style="margin-bottom:1rem">
     <table class="ltab">
-      <thead><tr><th style="width:160px">Decisão</th><th>Ementa / Assunto</th><th>Conteúdo principal</th><th style="width:80px">Data</th></tr></thead>
+      <thead><tr><th>Decisão</th><th>Sessão / Ano</th><th>Interessado</th><th>Ementa e Pontos Principais</th></tr></thead>
       <tbody>
-        <tr style="background:#edfaf3">
-          <td>
-            <strong>096/2013-CEEC</strong><br>
-            <span style="font-size:.68rem;color:var(--cz-m)">Ref. 7133/2013<br>Interessado: Wenderson Alan de Souza</span><br>
-            <span style="display:inline-block;margin-top:.3rem;font-size:.6rem;font-weight:700;background:var(--verde);color:#fff;padding:2px 7px;border-radius:99px;letter-spacing:.05em">CEEC — Regional · Vigente</span>
-          </td>
-          <td><strong>Engenheiro Ambiental habilitado para elaborar e executar PRAD — com exceção de atividades de plantio</strong></td>
-          <td>
-            <ul style="padding-left:0;list-style:none">
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>A CEEC manifestou-se <strong>favoravelmente</strong>: Engenheiros Ambientais podem elaborar e executar planos de recuperação de áreas degradadas</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>O profissional cursou disciplinas que o capacitam a elaborar PRADs — verificação curricular confirmada</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span><strong>Exceção relevante:</strong> atividades de <em>conservação e manutenção de plantio</em> são <strong>restritas à modalidade Agronomia</strong> — não são atribuição do Engenheiro Ambiental</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Reunião coordenada pelo Conselheiro José da Silva Neves; processo relatado pelo Conselheiro Augusto Alves Ordonez</li>
+        <!-- PL-0719/2007 -->
+        <tr>
+          <td><strong>PL-0719/2007</strong></td>
+          <td>Plen. 1.343 · 2007</td>
+          <td>Centro de Hidrografia da Marinha (CHM)</td>
+          <td><strong>Eng. Civil tem atribuição para batimetria (atividade-meio para portos, rios, canais, barragens e diques)</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Eng. Civil habilitado para levantamentos batimétricos conforme art. 7º da Res. 218/73 e Anexo II da Res. 1010/2005</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Competência aplica-se às Categorias A e B da Instrução Técnica A-06ª do CHM</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--dou)">▸</span>Elaboração de cartas náuticas/geográficas: exige formação cartográfica específica</li>
             </ul>
           </td>
-          <td>09/05/2013</td>
+        </tr>
+        <!-- PL-0302/2008 -->
+        <tr>
+          <td><strong>PL-0302/2008</strong></td>
+          <td>Plen. 1.349 · 2008</td>
+          <td>CREA-SC</td>
+          <td><strong>Técnico em Edificações: limites de área, reformas, laudos e concreto armado</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Pode projetar e executar edificações de <strong>até 80m²</strong> (exceto conjuntos residenciais), inclusive concreto armado dentro desse limite</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Reformas: <strong>sem limite de área</strong>, salvo em estruturas de concreto armado ou metálica</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Ampliações: limite de <strong>80m² de área total</strong></li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Atividade de <strong>desenhista: sem limite de área</strong></li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Laudo: pode emitir sobre edificações de até 80m² (quem pode projetar/executar pode laudar)</li>
+            </ul>
+          </td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <div class="alt-box vd fade-in"><span class="ai">✅</span>
-    <p><strong>Entendimento consolidado (CEEC/CREA-PA):</strong> O Engenheiro Ambiental está habilitado para elaborar e executar PRADs. <strong>Atenção:</strong> se o PRAD incluir atividades de conservação e manutenção de plantio, será necessário co-responsável com formação em Agronomia, pois esta atividade específica é restrita à modalidade agronômica.</p>
-  </div>
-
-  <!-- BLOCO TEMÁTICO — POÇOS / ENG. SANITARISTA -->
-  <div class="sh fade-in" style="margin-top:2.5rem">
-    <div class="st" style="font-size:1.1rem">💧 Bloco Temático: Limpeza e Desinfecção de Poços — Revisão de Atribuição
-      <small>Engenheiro Sanitarista habilitado para serviços de lavagem e desinfecção de poços — CEEC/CREA-PA</small>
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BLOCO TEMÁTICO — ENGENHARIA AMBIENTAL / MONITORAMENTO / MULTIDISCIPLINAR -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div class="sh fade-in" style="margin-top:2.2rem">
+    <div class="st" style="font-size:1.1rem">🌿 Bloco Temático: Monitoramento Ambiental — Dragagem e Resíduos Sólidos
+      <small>Atribuições multidisciplinares para monitoramento ambiental — Plenário CONFEA</small>
     </div>
   </div>
-
-  <div class="card fade-in" style="overflow-x:auto;padding:0;margin-bottom:1rem">
+  <div class="form-box fade-in" style="margin-bottom:1rem">
     <table class="ltab">
-      <thead><tr><th style="width:160px">Decisão</th><th>Ementa / Assunto</th><th>Conteúdo principal</th><th style="width:80px">Data</th></tr></thead>
+      <thead><tr><th>Decisão</th><th>Sessão / Ano</th><th>Interessado</th><th>Ementa e Pontos Principais</th></tr></thead>
       <tbody>
-        <tr style="background:#eef4ff">
-          <td>
-            <strong>0615/2016-CEEC</strong><br>
-            <span style="font-size:.68rem;color:var(--cz-m)">Ref. 268563/2015<br>Interessado: Alex Wilde Salles Antunes</span><br>
-            <span style="display:inline-block;margin-top:.3rem;font-size:.6rem;font-weight:700;background:var(--fisc);color:#fff;padding:2px 7px;border-radius:99px;letter-spacing:.05em">CEEC — Regional · Vigente</span>
-          </td>
-          <td><strong>Revisão de atribuição — Eng. Sanitarista habilitado para limpeza e desinfecção de poços artesianos e freáticos</strong></td>
-          <td>
-            <ul style="padding-left:0;list-style:none">
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-c)">▸</span>ART liberada para Engenheiro Sanitarista atuar como responsável técnico em serviços de <strong>lavagem e desinfecção de poços</strong></li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-c)">▸</span>Fundamento: Res. CONFEA 310/86, art. 1º — compete ao Engenheiro Sanitarista o desempenho das atividades 01 a 18 do art. 1º da Res. 218/73, incluindo sistemas de abastecimento de água (captação, adução, reservação, distribuição e tratamento)</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-c)">▸</span>Entendimento: poço = tipo de captação de água; limpeza e desinfecção = tipo de tratamento de água — dentro das atribuições do Eng. Sanitarista</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-c)">▸</span>Fundamentos legais: Res. CONFEA 218/1973, 310/1983; Dec. nº 23.569/33; Dec. Normativa nº 59/97</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--azul-c)">▸</span>Profissional graduado pela UFPA; análise curricular confirmou compatibilidade com a atividade pleiteada</li>
+        <!-- PL-0979/2002 -->
+        <tr>
+          <td><strong>PL-0979/2002</strong></td>
+          <td>Plen. 1.313 · 2002</td>
+          <td>CEEC / CREA-RS</td>
+          <td><strong>Monitoramento ambiental de dragagem simples de areias fluviais — equipe multidisciplinar</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span><strong>Fauna aquática e terrestre:</strong> Eng. de Pesca, Eng. Ambiental e profissionais com disciplinas comprovadas na área</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span><strong>Flora:</strong> Eng. Florestal, Eng. Agrônomo, Eng. Ambiental, Eng. Agrícola e Técnico Agrícola com currículo pertinente</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span><strong>Meio físico (aquático e terrestre):</strong> Geólogo, Eng. Geólogo, Eng. de Minas, Meteorologista, Geógrafo, Eng. Químico, Eng. Florestal, Eng. Civil, Eng. Agrônomo, Eng. Ambiental, Eng. Agrícola e Técnico Agrícola</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--dou)">▸</span>Revogou a PL-0270/2000 e rejeitou pedido de reconsideração da CEEC-RS</li>
             </ul>
           </td>
-          <td>09/11/2016</td>
+        </tr>
+        <!-- PL-0033/2008 -->
+        <tr>
+          <td><strong>PL-0033/2008</strong></td>
+          <td>Plen. 1.347 · 2008</td>
+          <td>CREA-RJ</td>
+          <td><strong>Geógrafo: atribuição para monitoramento ambiental de resíduos sólidos via análise curricular</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-m)">▸</span>A atribuição do Geógrafo para monitoramento ambiental de resíduos sólidos é determinada pela <strong>Res. 1.010/2005</strong>, mediante análise curricular do profissional</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--dou)">▸</span>A Lei nº 6.664/1979 (profissão do Geógrafo) não permite identificar competência direta para aspectos químicos, infecto-contagiosos, toxicidade etc. dos resíduos sólidos</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--cz-m)">▸</span>Aplica-se também à PL-0979/2002 para aspectos físicos (origem de propriedades físicas dos resíduos)</li>
+            </ul>
+          </td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <!-- BLOCO TEMÁTICO — CEEMM -->
-  <div class="sh fade-in" style="margin-top:2.5rem">
-    <div class="st" style="font-size:1.1rem">⛏ Câmara Especializada de Eng. Mecânica, Metalúrgica, Geologia e Minas — CEEMM
-      <small>Decisões relevantes sobre atribuições em mineração e carga horária de autônomos</small>
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BLOCO TEMÁTICO — ENGENHARIA DE PESCA / CARCINICULTURA -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div class="sh fade-in" style="margin-top:2.2rem">
+    <div class="st" style="font-size:1.1rem">🦐 Bloco Temático: Eng. de Pesca — Carcinicultura e Duplo Registro
+      <small>Competência do Eng. de Pesca em aquicultura e vedação ao duplo registro — Plenário CONFEA</small>
     </div>
   </div>
-
-  <div class="card fade-in" style="overflow-x:auto;padding:0;margin-bottom:1.4rem">
+  <div class="form-box fade-in" style="margin-bottom:1rem">
     <table class="ltab">
-      <thead><tr><th style="width:160px">Decisão</th><th>Ementa / Assunto</th><th>Conteúdo principal</th><th style="width:80px">Data</th></tr></thead>
+      <thead><tr><th>Decisão</th><th>Sessão / Ano</th><th>Interessado</th><th>Ementa e Pontos Principais</th></tr></thead>
       <tbody>
-
-        <!-- 145/2018-CEEMM -->
-        <tr style="background:#fffbef">
-          <td>
-            <strong>145/2018-CEEMM</strong><br>
-            <span style="font-size:.68rem;color:var(--cz-m)">Ref. 340626/2018<br>Interessado: UFPA</span><br>
-            <span style="display:inline-block;margin-top:.3rem;font-size:.6rem;font-weight:700;background:var(--dou);color:#fff;padding:2px 7px;border-radius:99px;letter-spacing:.05em">CEEMM — Regional · Vigente</span>
-          </td>
-          <td><strong>Revisão de cadastramento — Especialização em Geologia de Minas e Técnicas de Lavra a Céu Aberto (UFPA/EAD) com concessão de atribuições</strong></td>
-          <td>
-            <ul style="padding-left:0;list-style:none">
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--dou)">▸</span>Egressos habilitados para <strong>elaboração e execução</strong>, em lavra a céu aberto, de: Plano de Aproveitamento Econômico da Jazida; Plano/Projeto de Lavra de Mina a Céu Aberto; Relatório Anual de Lavra; Plano de Fechamento, Suspensão e Retomada das Operações Mineiras</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--dou)">▸</span>Também habilitados para: Plano de Controle e Impacto Ambiental na Mineração (PCIAM); Plano de Resgate e Salvamento; Projeto de Beneficiamento de Minérios por Processos Físicos (Cominuição e Classificação); Memorial Descritivo de Lavra para Licenciamento</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--dou)">▸</span><strong>Exceção expressa:</strong> atividades de <em>projeto e execução de desmonte de rocha com explosivos</em> NÃO estão contempladas — exigem cumprimento do art. 1º da Decisão Normativa CONFEA de 14/12/2001</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--dou)">▸</span>Curso ofertado pelo Instituto de Geociências da UFPA na modalidade EAD (Lato Sensu); cadastro anterior atualizado pela Dec. 77/2018-CEEMM de 13/09/2018</li>
+        <!-- PL-0259/2014 -->
+        <tr>
+          <td><strong>PL-0259/2014</strong></td>
+          <td>Plen. 1.408 · 2014</td>
+          <td>CREA-RN</td>
+          <td><strong>Eng. de Pesca: ampla competência em carcinicultura; vedação ao duplo registro</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Eng. de Pesca possui <strong>ampla competência e atribuição</strong> em carcinicultura (criação de camarões marinhos e de água doce)</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Base normativa: Res. 279/83 + Res. 218/73 + Res. CNE nº 5/2006 (diretrizes curriculares de Eng. de Pesca)</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--lrj)">▸</span><strong>Vedado o duplo registro:</strong> empresa já registrada no CREA não pode ser autuada pelo CRMV pelo exercício de carcinicultura — jurisprudência do STJ</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--dou)">▸</span>CRMV não tem exclusividade sobre aquicultura — há sombreamento de atividades; prevalece o registro no sistema de fiscalização competente</li>
             </ul>
           </td>
-          <td>13/12/2018</td>
         </tr>
-
-        <!-- DIVISOR -->
-        <tr><td colspan="4" style="padding:.4rem 1rem;background:var(--cz-c);font-family:'Syne',sans-serif;font-size:.68rem;font-weight:700;color:var(--azul-m);letter-spacing:.08em;text-transform:uppercase">Decisão sobre carga horária e distância de responsável técnico autônomo</td></tr>
-
-        <!-- 151/2017-CEMM -->
-        <tr style="background:#f5f0ff">
-          <td>
-            <strong>151/2017-CEMM</strong><br>
-            <span style="font-size:.68rem;color:var(--cz-m)">Ref. 3042332017<br>Interessado: Superintendência Técnica</span><br>
-            <span style="display:inline-block;margin-top:.3rem;font-size:.6rem;font-weight:700;background:var(--roxo);color:#fff;padding:2px 7px;border-radius:99px;letter-spacing:.05em">CEMM — Regional · Vigente</span>
-          </td>
-          <td><strong>Normatização de horário de trabalho de profissionais autônomos — indeferida a fixação de limites mínimos/máximos</strong></td>
-          <td>
-            <ul style="padding-left:0;list-style:none">
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--roxo)">▸</span>A CEMM <strong>não estabelece limites mínimos ou máximos de carga horária</strong> para profissionais autônomos na prestação de serviços, independentemente do tipo</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--roxo)">▸</span>A CEMM <strong>não estabelece distância mínima ou máxima</strong> entre as empresas para as quais o autônomo presta serviços</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--roxo)">▸</span>Fundamento: fatores logísticos (tipo de transporte, condições de estrada, etc.) dificultam definição de distância fixa para todos os casos</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--roxo)">▸</span>Deve prevalecer a <strong>capacidade de trabalho de cada profissional</strong>, cabendo ao mesmo as responsabilidades decorrentes de sua atuação</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--roxo)">▸</span>Limite mantido: art. 18 da Res. 336/89 — profissional pode ser RT por uma única PJ além de sua firma individual, e em casos excepcionais até 3 PJs, a critério do Plenário do CREA</li>
-            </ul>
-          </td>
-          <td>20/04/2017</td>
-        </tr>
-
       </tbody>
     </table>
   </div>
 
-  <!-- BLOCO TEMÁTICO — PLENÁRIO CONFEA: BAIXA TENSÃO, PODA, JARDINAGEM -->
-  <div class="sh fade-in" style="margin-top:2.5rem">
-    <div class="st" style="font-size:1.1rem">⚡🌳 Plenário CONFEA — Atribuições Profissionais: Baixa Tensão, Poda de Árvores e Jardinagem
-      <small>Decisões plenárias de abrangência nacional sobre atividades frequentemente questionadas</small>
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BLOCO TEMÁTICO — ENGENHARIA FLORESTAL -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div class="sh fade-in" style="margin-top:2.2rem">
+    <div class="st" style="font-size:1.1rem">🌳 Bloco Temático: Engenharia Florestal — Laudo de Descaracterização Rural (INCRA)
+      <small>Habilitação do Eng. Florestal para elaboração de laudo junto ao INCRA — Plenário CONFEA</small>
     </div>
   </div>
-
-  <div class="card fade-in" style="overflow-x:auto;padding:0;margin-bottom:1.4rem">
+  <div class="form-box fade-in" style="margin-bottom:1rem">
     <table class="ltab">
-      <thead><tr><th style="width:160px">Decisão</th><th>Ementa / Assunto</th><th>Conteúdo principal</th><th style="width:80px">Data</th></tr></thead>
+      <thead><tr><th>Decisão</th><th>Sessão / Ano</th><th>Interessado</th><th>Ementa e Pontos Principais</th></tr></thead>
       <tbody>
-
-        <!-- PL-0990/2002 — Baixa Tensão -->
-        <tr style="background:#fff8f0">
-          <td>
-            <strong>PL-0990/2002</strong><br>
-            <span style="font-size:.68rem;color:var(--cz-m)">Ref. CF-2624/1999<br>Interessado: José Herival Mendes da Costa</span><br>
-            <span style="display:inline-block;margin-top:.3rem;font-size:.6rem;font-weight:700;background:#e07030;color:#fff;padding:2px 7px;border-radius:99px;letter-spacing:.05em">CONFEA — Nacional</span>
-          </td>
-          <td><strong>Engenheiro Civil — competência limitada a instalações elétricas prediais de baixa tensão; subestações excluídas da CAT</strong></td>
-          <td>
-            <ul style="padding-left:0;list-style:none">
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--lrj)">▸</span>Revoga as Decisões Plenárias PL-0382/2001 e PL-0406/2001</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--lrj)">▸</span>Nega provimento à inclusão da construção de subestação de 300 kVA no Acervo Técnico do Eng. Civil — profissional sem credenciamento em Eletrotécnica</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--lrj)">▸</span><strong>Ratifica o entendimento das Câmaras de Eng. Civil e Eng. Elétrica do CREA-PA:</strong> a competência dos Engenheiros Civis está <strong>limitada às instalações elétricas de edificações de suas responsabilidades técnicas em baixa tensão</strong></li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--lrj)">▸</span>Decisão alinhada com a CEEE 2692/2023 do CREA-PA — consistência de entendimento ao longo do tempo</li>
+        <!-- PL-1883/2015 -->
+        <tr>
+          <td><strong>PL-1883/2015</strong></td>
+          <td>Plen. 1.423 · 2015</td>
+          <td>CCEEF (Eng. Florestal)</td>
+          <td><strong>Eng. Florestal habilitado para laudo de descaracterização de função rural para urbana de imóveis rurais (INCRA)</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>CONFEA determinou ofício à Presidência do INCRA para que todas as Superintendências Regionais reconheçam o Eng. Florestal como habilitado para esse laudo</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Fundamento: Eng. Florestal vincula-se às Ciências Agrárias; laudo envolve estudo de viabilidade técnica e econômica de uso racional do solo</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-m)">▸</span>Profissional deve estar registrado no CREA que originou o pedido e credenciado no INCRA Nacional (Lei nº 5.868/1972)</li>
             </ul>
           </td>
-          <td>13/12/2002</td>
         </tr>
-
-        <!-- DIVISOR -->
-        <tr><td colspan="4" style="padding:.4rem 1rem;background:var(--cz-c);font-family:'Syne',sans-serif;font-size:.68rem;font-weight:700;color:var(--azul-m);letter-spacing:.08em;text-transform:uppercase">Poda de árvores — habilitação profissional</td></tr>
-
-        <!-- PL-0294/2003 — Poda -->
-        <tr style="background:#edfaf3">
-          <td>
-            <strong>PL-0294/2003</strong><br>
-            <span style="font-size:.68rem;color:var(--cz-m)">Ref. CF-1481/2000 e outros<br>Interessados: Crea-PR e Crea-ES</span><br>
-            <span style="display:inline-block;margin-top:.3rem;font-size:.6rem;font-weight:700;background:#e07030;color:#fff;padding:2px 7px;border-radius:99px;letter-spacing:.05em">CONFEA — Nacional</span>
-          </td>
-          <td><strong>Profissionais habilitados para poda de árvores — área urbana e área urbana próxima a linhas energizadas</strong></td>
-          <td>
-            <ul style="padding-left:0;list-style:none">
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span><strong>Poda de árvores (geral):</strong> habilitados são o Engenheiro Agrônomo, o Engenheiro Florestal, o Técnico Agrícola e o Técnico Florestal</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span><strong>Poda próxima a linhas energizadas na área urbana:</strong> habilitados são Engenheiro Agrônomo, Engenheiro Florestal, Técnico Agrícola ou Técnico Florestal — com <strong>co-responsabilidade obrigatória de Engenheiro Eletricista ou Técnico em Eletricidade</strong></li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Aprovado por unanimidade; sessão presidida pelo Eng. Agrônomo Antônio Roque Dechen</li>
-            </ul>
-          </td>
-          <td>27/06/2003</td>
-        </tr>
-
-        <!-- DIVISOR -->
-        <tr><td colspan="4" style="padding:.4rem 1rem;background:var(--cz-c);font-family:'Syne',sans-serif;font-size:.68rem;font-weight:700;color:var(--azul-m);letter-spacing:.08em;text-transform:uppercase">Jardinagem como modalidade paisagística — exige registro no CREA</td></tr>
-
-        <!-- PL-0391/2017 — Jardinagem -->
-        <tr style="background:#f0f5ff">
-          <td>
-            <strong>PL-0391/2017</strong><br>
-            <span style="font-size:.68rem;color:var(--cz-m)">Ref. PC CF-2793/2016<br>Interessado: A Prima Plantarum Ltda-ME</span><br>
-            <span style="display:inline-block;margin-top:.3rem;font-size:.6rem;font-weight:700;background:#e07030;color:#fff;padding:2px 7px;border-radius:99px;letter-spacing:.05em">CONFEA — Nacional</span>
-          </td>
-          <td><strong>Jardinagem é modalidade paisagística — empresa sem registro no CREA mantida autuada por infração ao art. 59 da Lei 5.194/66</strong></td>
-          <td>
-            <ul style="padding-left:0;list-style:none">
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-c)">▸</span>Mantém Auto de Infração nº 2015/8-033103-001 do Crea-PR contra empresa de paisagismo e jardinagem sem registro no Conselho</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-c)">▸</span><strong>Jardinagem é uma modalidade da atividade paisagística</strong> e a atividade paisagística se insere entre aquelas executadas sob responsabilidade técnica dos profissionais de Agronomia, fiscalizados pelo Sistema CONFEA/CREA (art. 24 da Lei 5.194/66)</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--azul-c)">▸</span>Empresas que executam serviços de agronomia (incluindo jardinagem/paisagismo) estão obrigadas a registro no CREA e a possuir responsável técnico habilitado (art. 59 da Lei 5.194/66; Res. 336/89; Decisão Normativa 74/2004)</li>
-              <li style="font-size:.77rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--azul-c)">▸</span>Multa máxima mantida (R$ 1.681,84) em razão da não regularização da situação pela empresa junto ao Regional</li>
-            </ul>
-          </td>
-          <td>08/05/2017</td>
-        </tr>
-
       </tbody>
     </table>
   </div>
 
-  <div class="alt-box vd fade-in"><span class="ai">✅</span>
-    <p><strong>Síntese (Plenário CONFEA — atribuições em análise):</strong> (1) Engenheiro Civil projeta apenas instalações elétricas prediais em baixa tensão — subestações são atribuição exclusiva do Eletricista. (2) Poda de árvores urbanas exige Agrônomo ou Florestal; quando próximo a redes energizadas, exige co-RT Eletricista. (3) Empresas de jardinagem e paisagismo devem ter registro no CREA e responsável técnico agrônomo ou florestal.</p>
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BLOCO TEMÁTICO — ENGENHARIA DE MINAS / RAL -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div class="sh fade-in" style="margin-top:2.2rem">
+    <div class="st" style="font-size:1.1rem">⛏ Bloco Temático: Engenharia de Minas — Relatório Anual de Lavra (RAL)
+      <small>Atribuição exclusiva do Eng. de Minas para o RAL junto ao DNPM — Plenário CONFEA</small>
+    </div>
+  </div>
+  <div class="form-box fade-in" style="margin-bottom:1rem">
+    <table class="ltab">
+      <thead><tr><th>Decisão</th><th>Sessão / Ano</th><th>Interessado</th><th>Ementa e Pontos Principais</th></tr></thead>
+      <tbody>
+        <!-- PL-1748/2015 -->
+        <tr>
+          <td><strong>PL-1748/2015</strong></td>
+          <td>Plen. 1.422 · 2015</td>
+          <td>CCEGM (Geologia e Minas)</td>
+          <td><strong>RAL — Relatório Anual de Lavra junto ao DNPM é atribuição do Engenheiro de Minas</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>A elaboração do RAL (relatório anual, prazo 15 a 31 de março, exigido pelo DNPM para lavra de qualquer substância mineral) é <strong>atribuição exclusiva do Eng. de Minas</strong></li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Base: Decreto-Lei 227/1967 (Código de Mineração), art. 47-VI; Res. 218/73, art. 14; Decreto 23.569/1933, art. 34; Lei 4.076/1962 (Geólogos)</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--lrj)">▸</span><strong>Tecnólogo em Mineração NÃO tem lei regulamentada</strong> nem atribuição para "Lavra de Minas" — portanto não pode ser RT do RAL</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--dou)">▸</span>Exceção para substâncias minerais classe II (areia, argila, cascalho, saibro): lavra simplificada, mas o RAL ainda exige Eng. de Minas com ART</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BLOCO TEMÁTICO — GEORREFERENCIAMENTO / AGRIMENSURA -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div class="sh fade-in" style="margin-top:2.2rem">
+    <div class="st" style="font-size:1.1rem">📐 Bloco Temático: Georreferenciamento de Imóveis Rurais — DN 116/2021
+      <small>Instrução prévia da CEAP para processos de georreferenciamento — Plenário CONFEA (2026)</small>
+    </div>
+  </div>
+  <div class="form-box fade-in" style="margin-bottom:1rem">
+    <table class="ltab">
+      <thead><tr><th>Decisão</th><th>Sessão / Ano</th><th>Interessado</th><th>Ementa e Pontos Principais</th></tr></thead>
+      <tbody>
+        <!-- PL-0458/2026 -->
+        <tr>
+          <td><strong>PL-0458/2026</strong></td>
+          <td>Plen. 1.742 · 2026</td>
+          <td>Sistema CONFEA/CREA</td>
+          <td><strong>Georreferenciamento de imóveis rurais (DN 116/2021): CEAP instrui processo antes de encaminhar às câmaras</strong>
+            <ul style="margin:.4rem 0 0 1rem;padding:0;list-style:none">
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Processos referentes à DN 116/2021 (habilitação para georreferenciamento de imóveis rurais) devem receber <strong>prévia instrução da CEAP</strong> do Regional antes de serem destinados às câmaras especializadas (CCEEAGRI ou outras)</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--verde)">▸</span>Determinação estendida a todos os Regionais que possuam CEAP instituída</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--lrj)">▸</span>A análise <strong>não deve extrapolar</strong> o conteúdo da DN 116/2021 — vedado indeferimento por modalidade de ensino, carga horária ou interpretações não previstas no normativo</li>
+              <li style="font-size:.77rem;padding-left:1rem;position:relative;margin-bottom:.3rem"><span style="position:absolute;left:0;color:var(--dou)">▸</span>Decisão originou-se de conflito entre CCEAGRO (Agronomia) e CCEEAGRI (Agrimensura) sobre quem tem prerrogativa para georreferenciamento de imóveis rurais incluindo SNCR</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alt-box am" style="margin-top:.8rem"><span class="ai">📌</span>
+      <p>Esta decisão é especialmente relevante para o CREA-PA pois a CCEEAGRI (Agrimensura, Cartografia e Geografia) é câmara ativa no Regional. Processos de extensão de atribuição para georreferenciamento devem ser instruídos pela CEAP antes de chegarem à câmara. A pauta da 2ª Reunião Ordinária da CCEEAGRI 2026 (Rio de Janeiro, 13-15/04/2026) já incluiu esta decisão em seus Assuntos Gerais.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BLOCO TEMÁTICO — NORMATIVOS DE REGISTRO PJ POR CÂMARA -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div class="sh fade-in" style="margin-top:2.2rem">
+    <div class="st" style="font-size:1.1rem">🏢 Normativos de Registro de Pessoa Jurídica — por Câmara Especializada
+      <small>Decisões que disciplinam inclusão de Responsabilidade Técnica em PJ no âmbito do CREA-PA</small>
+    </div>
+  </div>
+  <div class="form-box fade-in" style="margin-bottom:1rem">
+    <p><strong>Contexto:</strong> Com base na <strong>Resolução CONFEA nº 1.121/2019</strong> e na <strong>DN nº 117/2023</strong>, cada Câmara Especializada do CREA-PA aprovou seu próprio normativo interno disciplinando os procedimentos operacionais para registro de PJ e inclusão de Responsabilidade Técnica. O conjunto de normas é homogêneo entre as câmaras, com variações pontuais. As regras abaixo são de aplicação direta nos processos de Inclusão de RT.</p>
+
+    <!-- Regras comuns a todas as câmaras -->
+    <div class="alt-box az" style="margin-bottom:1.2rem"><span class="ai">📌</span>
+      <p><strong>Regras comuns aprovadas por todas as câmaras (itens convergentes):</strong></p>
+      <ol style="font-size:.82rem;line-height:1.85;margin:.4rem 0 0 1rem;padding:0">
+        <li><strong>Sem restrição de número de PJs:</strong> não há limite ao número de empresas pelas quais o profissional pode ser RT ou compor o quadro técnico — cabe ao CREA fiscalizar a participação efetiva (DN 117/2023, art. 10).</li>
+        <li><strong>Triagem pelo SRC:</strong> o Setor de Registro e Cadastro (SRC) recebe os processos no SITAC, efetua triagem e verifica compatibilidade com as normas vigentes.</li>
+        <li><strong>4ª responsabilidade → SAC + câmara:</strong> a partir da 4ª RT, o processo é encaminhado à SAC (Seção de Apoio ao Colegiado) para análise e parecer técnico, e depois à câmara especializada.</li>
+        <li><strong>Remuneração mínima:</strong> a remuneração do RT não pode ser inferior ao piso da <strong>Lei 4.950-A/1966</strong>, nem o fracionamento inferior a 1 salário mínimo.</li>
+        <li><strong>ART com horários declarados:</strong> obrigatório declarar na ART de cargo/função os horários dedicados a cada PJ — horários de diferentes RTs não podem coincidir.</li>
+        <li><strong>Distância irrelevante (dentro do Pará):</strong> não se observam distâncias entre as RTs, desde que no Estado do Pará. Se o profissional não atuar na sede, a PJ deve declarar o local de trabalho.</li>
+        <li><strong>Monitoramento mensal:</strong> o SRC envia à câmara, mensalmente, a lista de profissionais com mais de 4 RTs ativas — câmara encaminha à GFI para verificação de indício de acobertamento profissional e atualização do livro de obras.</li>
+        <li><strong>RT com prazo determinado:</strong> o SRC comunica a PJ para renovação ou baixa do contrato antes do vencimento; o registro deve constar no SITAC.</li>
+        <li><strong>PJ com RT único baixado:</strong> o GRC comunica a empresa a necessidade de renovar ou indicar novo profissional em <strong>10 dias</strong>, sob pena de impedimento por exercício ilegal da profissão.</li>
+        <li><strong>Documentos exigidos (Res. 1.121/19, art. 9º):</strong> instrumento de constituição (original + cópia ou consolidado atualizado), CNPJ, indicação de pelo menos 1 RT, ART de cargo/função já registrada para cada RT.</li>
+      </ol>
+    </div>
+
+    <!-- Tabela comparativa por câmara -->
+    <div class="st" style="font-size:.95rem;margin-bottom:.6rem">Decisões por Câmara Especializada</div>
+    <table class="ltab">
+      <thead>
+        <tr>
+          <th>Câmara</th>
+          <th>Decisão</th>
+          <th>Data</th>
+          <th>Ref. Processo</th>
+          <th>Observações específicas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- CEAGRO -->
+        <tr>
+          <td><strong>CEAGRO</strong><br><span style="font-size:.68rem;color:var(--cz-m)">Agronomia</span></td>
+          <td><strong>CEAGRO 257/2024</strong></td>
+          <td>22/03/2024</td>
+          <td>559115/2024</td>
+          <td>Regras padrão. Relator: Kepler Jose Braun Guimarães. Aprovado por unanimidade (3 conselheiros).</td>
+        </tr>
+        <!-- CEEF -->
+        <tr>
+          <td><strong>CEEF</strong><br><span style="font-size:.68rem;color:var(--cz-m)">Eng. Florestal</span></td>
+          <td><strong>CEEF 101/2024</strong></td>
+          <td>19/04/2024</td>
+          <td>559116/2024</td>
+          <td>Incorpora a <strong>Decisão nº 411/2020 da CEEF</strong> como precedente. Aprova também a lista de documentos do art. 9º da Res. 1.121/19 com texto integral. Relator: Tania Mara De Azevedo Giusti. Aprovado por unanimidade (4 conselheiros).</td>
+        </tr>
+        <!-- CEEC -->
+        <tr>
+          <td><strong>CEEC</strong><br><span style="font-size:.68rem;color:var(--cz-m)">Eng. Civil e Agrimensura</span></td>
+          <td><strong>CEEC 6594/2024</strong></td>
+          <td>16/10/2024</td>
+          <td>558989/2024</td>
+          <td>Regras padrão. Relator: Carlos Rodrigo Tanajura Caldeira. Aprovado por unanimidade (10 conselheiros — maior quórum entre as câmaras).</td>
+        </tr>
+        <!-- CEMM -->
+        <tr>
+          <td><strong>CEMM</strong><br><span style="font-size:.68rem;color:var(--cz-m)">Eng. Mecânica, Metalúrgica, Química, Geologia e Minas</span></td>
+          <td><strong>CEMM 2877/2024</strong></td>
+          <td>16/10/2024</td>
+          <td>558278/2024</td>
+          <td>Regras padrão. Acrescenta item: <strong>SRC encaminha a 4ª RT ao SAC; casos de indeferimento vão à câmara para voto</strong>. Relator: Gelson Ferreira da Silva Neto (Eng. Naval). Aprovado por unanimidade (4 conselheiros).</td>
+        </tr>
+        <!-- CEEE -->
+        <tr>
+          <td><strong>CEEE</strong><br><span style="font-size:.68rem;color:var(--cz-m)">Eng. Elétrica e Seg. do Trabalho</span></td>
+          <td><strong>CEEE 2299/2024</strong></td>
+          <td>02/12/2024</td>
+          <td>559111/2024</td>
+          <td><strong>Revoga as Decisões CEEE 05/2018, 943/2020 e altera itens 3, 4, 5 e 8 da CEEE 1376/2024.</strong> Item 4 específico: 4ª RT em diante o SAC encaminha os pedidos à câmara do <em>grupo modalidade Engenharia Elétrica</em>. Item 13 diferenciado: prazo de 10 dias contados a partir da <em>notificação</em>. Revoga decisões anteriores sobre RT de PJ desta câmara. Relator: Everton Ruggeri Silva Araujo. Aprovado por unanimidade (4 conselheiros).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="alt-box am" style="margin-top:1rem"><span class="ai">⚠️</span>
+      <p><strong>Câmaras pendentes:</strong> As câmaras de <strong>Engenharia de Minas e Geologia</strong> (dentro da CEMM), <strong>Química</strong> e <strong>Topografia/Agrimensura</strong> (dentro da CEEC) seguem os mesmos critérios do normativo de sua câmara especializada de referência. Câmaras não listadas acima ainda não emitiram decisão normativa própria — aplicar os parâmetros da DN 117/2023 diretamente.</p>
+    </div>
+
+    <!-- Res. 359/91 e DN 79/06 -->
+    <div class="st" style="font-size:.95rem;margin:1.4rem 0 .6rem">Normas Relacionadas — Especialidades e Atribuições</div>
+    <table class="ltab">
+      <thead><tr><th>Norma</th><th>Data</th><th>Assunto</th><th>Aplicação nas câmaras</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Res. CONFEA nº 359/1991</strong></td>
+          <td>31/07/1991</td>
+          <td>Engenheiro de Segurança do Trabalho</td>
+          <td>Disciplina o exercício profissional, registro e atividades do Eng. de Segurança do Trabalho. Exige pós-graduação em Eng. de Segurança do Trabalho (Parecer CFE 19/87). Abrange qualquer Engenheiro ou Arquiteto com certificado de especialização. Aplicável pela <strong>CEEE</strong> na análise de RT de empresas do setor de segurança do trabalho. As 18 atividades listadas no art. 4º definem o escopo de fiscalização.</td>
+        </tr>
+        <tr>
+          <td><strong>DN CONFEA nº 79/2006</strong></td>
+          <td>28/04/2006</td>
+          <td>Silvicultura — Atribuições de Eng. Florestal e Agrônomo</td>
+          <td><strong>Revoga a DN 077/2005.</strong> Determina que as atribuições em silvicultura decorrem do conteúdo curricular cumprido (art. 25 da Res. 218/73) — sem normativo específico de atribuição exclusiva. Aplicável pela <strong>CEEF</strong> e <strong>CEAGRO</strong> na análise de extensão de atribuição e ART para atividades de silvicultura.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- BLOCO TEMÁTICO — DECISÕES NORMATIVAS (DN) -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div class="sh fade-in" style="margin-top:2.2rem">
+    <div class="st" style="font-size:1.1rem">📋 Decisões Normativas do CONFEA — Responsabilidade Técnica por Setor
+      <small>DNs que disciplinam obrigatoriedade de RT e atribuições por tipo de atividade</small>
+    </div>
+  </div>
+  <div class="form-box fade-in" style="margin-bottom:1rem">
+    <p><strong>Contexto:</strong> As Decisões Normativas (DN) do CONFEA têm força normativa geral para todo o Sistema CONFEA/CREA e regulamentam obrigatoriedade de Responsável Técnico, ART e atribuições por setor de atividade. As DNs abaixo são de aplicação direta nas câmaras especializadas para análise de registros de PJ, ARTs e autos de infração.</p>
+    <table class="ltab">
+      <thead><tr><th>DN</th><th>Data</th><th>Setor</th><th>Determinação Principal</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>DN nº 020/1986</strong></td>
+          <td>25/04/1986</td>
+          <td>Concretagem</td>
+          <td>Serviços de concretagem são empreendimentos de Engenharia. <strong>ART obrigatória por obra</strong>. Sem dupla incidência quando contratados separadamente.</td>
+        </tr>
+        <tr>
+          <td><strong>DN nº 052/1994</strong></td>
+          <td>25/08/1994</td>
+          <td>Parques de Diversões</td>
+          <td><strong>RT obrigatório</strong> (ART + laudo semestral) para equipamentos mecânicos e eletromecânicos. RT para equipamentos: <strong>Eng. Mecânico, Metalurgista, Industrial e Tecnólogos da modalidade</strong>. RT para subestação: Eng. Eletricista, Eletrônico ou Eletrotécnico. Prefeituras devem exigir ART para alvarás de funcionamento.</td>
+        </tr>
+        <tr>
+          <td><strong>DN nº 053/1994</strong></td>
+          <td>09/11/1994</td>
+          <td>Armazéns Agrícolas</td>
+          <td><strong>RT obrigatório</strong> em armazéns que armazenem, beneficiem ou guardem produtos agrícolas. Responsabilidade técnica cabe ao <strong>Eng. Agrônomo ou Eng. Agrícola</strong>. ART por contrato de armazenamento. RT pode acumular até 3 empresas/5 unidades armazenadoras. Prazo de adequação: 120 dias da publicação.</td>
+        </tr>
+        <tr>
+          <td><strong>DN nº 061/1998</strong></td>
+          <td>27/03/1998</td>
+          <td>Barragens de Terra</td>
+          <td>Revoga a DN 031/88. <strong>Eng. Agrônomo e Eng. Agrícola têm atribuição para projeto e execução de barragens de terra sem limite de altura</strong>, quando para fins agrícolas. O grau de risco não é determinado apenas pela altura — envolve bacia hidrográfica, solo e outros fatores. Eng. Agrícola regulado pela Res. 256/78 e art. 1º da Res. 218/73.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alt-box az" style="margin-top:.8rem"><span class="ai">💡</span>
+      <p>As Decisões Normativas valem para todo o território nacional e vinculam todos os CREAs. Ao analisar um Auto de Infração ou processo de RT de PJ nessas atividades, cite a DN correspondente diretamente na fundamentação do voto.</p>
+    </div>
   </div>
 
   <!-- COLUNA DE ORIENTAÇÕES -->
@@ -2464,15 +2662,361 @@
 </section>
 </div>
 
-<footer>
-  <strong>CREA-PA — Câmaras Especializadas</strong> · Manual de Boas Práticas 2026<br>
-  <span style="font-size:.68rem;margin-top:.3rem;display:block">Res. 218/1973 · 310/1986 · 313/1986 · 447/2000 · 473/2002 · 1.002/2002 · 1.004/2003 · 1.008/2004 · 1.047/2013 · 1.050/2013 · 1.073/2016 · 1.116/2019 · 1.121/2019 · 1.137/2023 · 1.152/2025 · 1.158/2025 · 1.160/2025 · 1.162/2025 · Lei 5.194/1966 · Lei 6.496/1977 · Lei 6.839/1980 · Lei 9.784/1999 · Lei 9.873/1999 · Carta de Serviços CREA-PA 2024</span>
+<!-- ══════════════════════════════════════════════════════════════════
+     PAINEL — REGIMENTO INTERNO
+     ══════════════════════════════════════════════════════════════════ -->
+<div class="mpanel" id="p-reg">
+<section class="panel-content">
+
+  <div class="sh fade-in">
+    <div class="st">📗 Regimento Interno do CREA-PA
+      <small>Guia prático do Regimento aprovado em 26/01/2023 — Pontos essenciais para conselheiros de câmara especializada</small>
+    </div>
+  </div>
+  <div class="form-box fade-in" style="margin-bottom:1.2rem">
+    <p>O Regimento Interno do CREA-PA, aprovado em 26 de janeiro de 2023 e homologado pelo CONFEA, é a norma que organiza todo o funcionamento do Conselho — desde a estrutura dos órgãos até as regras de votação e quórum. Esta aba reúne os pontos que mais geram dúvidas no dia a dia das câmaras especializadas.</p>
+    <div class="alt-box az" style="margin-top:.6rem"><span class="ai">📌</span>
+      <p>Os artigos abaixo são reproduzidos e comentados a partir do Regimento vigente. Sempre que houver dúvida, prevalece o texto original do Regimento. Artigos citados seguem a numeração do texto aprovado (Arts. 1–212).</p>
+    </div>
+  </div>
+
+  <!-- ─── BLOCO 1 — ESTRUTURA DO CREA ─── -->
+  <div class="sh fade-in" style="margin-top:1.8rem">
+    <div class="st" style="font-size:1rem">🏛 Estrutura do CREA-PA (Arts. 3–5)</div>
+  </div>
+  <div class="form-box fade-in">
+    <p>O CREA-PA é organizado em três estruturas:</p>
+    <table class="ltab">
+      <thead><tr><th>Estrutura</th><th>Órgãos que a compõem</th><th>Papel</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Básica</strong></td>
+          <td>Plenário · Câmaras Especializadas · Presidência · Diretoria · Inspetorias</td>
+          <td>Decisória e executiva — onde ocorre o julgamento dos processos</td>
+        </tr>
+        <tr>
+          <td><strong>Suporte</strong></td>
+          <td>Comissões Permanentes (CEP, COTC, CRT, CEAP, CEN, CMA) · Comissões Especiais · Grupos de Trabalho</td>
+          <td>Auxilia o Plenário em temas específicos de caráter contínuo ou temporário</td>
+        </tr>
+        <tr>
+          <td><strong>Auxiliar</strong></td>
+          <td>Secretaria técnica e administrativa (Superintendência e setores)</td>
+          <td>Serviços de apoio — não delibera</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ─── BLOCO 2 — CÂMARA ESPECIALIZADA ─── -->
+  <div class="sh fade-in" style="margin-top:1.8rem">
+    <div class="st" style="font-size:1rem">⚙️ Câmara Especializada — Regras Fundamentais (Arts. 52–80)</div>
+  </div>
+  <div class="form-box fade-in">
+    <p style="font-size:.85rem;color:#555;margin-bottom:1rem">A câmara especializada é a <strong>primeira instância de julgamento</strong> do CREA-PA. Suas decisões podem ser objeto de recurso ao Plenário do CREA (segunda instância) e ao CONFEA (última instância).</p>
+
+    <table class="ltab">
+      <thead><tr><th>Tema</th><th>Regra (artigo)</th><th>Detalhe prático</th></tr></thead>
+      <tbody>
+        <!-- Composição -->
+        <tr>
+          <td><strong>Composição mínima</strong></td>
+          <td>Art. 55</td>
+          <td>Mínimo de <strong>3 conselheiros regionais</strong> da mesma modalidade profissional. Cada câmara tem também 1 representante do Plenário (outra modalidade), sem direito a voto ou relato.</td>
+        </tr>
+        <!-- Quórum -->
+        <tr>
+          <td><strong>Quórum de funcionamento</strong></td>
+          <td>Art. 70</td>
+          <td>Número inteiro imediatamente superior à metade da composição da câmara. Ex.: câmara com 4 membros → quórum = 3. <strong>Atenção:</strong> o representante do Plenário não conta para o quórum (Art. 56).</td>
+        </tr>
+        <!-- Votação -->
+        <tr>
+          <td><strong>Votação — maioria</strong></td>
+          <td>Art. 76 §1º</td>
+          <td>Decisão por <strong>maioria simples</strong>. Em caso de empate, o coordenador profere o <strong>voto de minerva</strong> (Art. 76 §2º).</td>
+        </tr>
+        <!-- Decisão por unanimidade -->
+        <tr>
+          <td><strong>Declaração de voto</strong></td>
+          <td>Art. 77</td>
+          <td>O conselheiro que divergir pode apresentar <strong>declaração de voto por escrito</strong>, conforme modelo aprovado.</td>
+        </tr>
+        <!-- Recurso -->
+        <tr>
+          <td><strong>Prazo de recurso</strong></td>
+          <td>Art. 79</td>
+          <td>Da decisão da câmara cabe recurso ao <strong>Plenário do CREA</strong> em até <strong>60 dias</strong> do recebimento da notificação pela parte interessada. O recurso tem <strong>efeito suspensivo</strong>.</td>
+        </tr>
+        <!-- Reuniões -->
+        <tr>
+          <td><strong>Tipos de reunião</strong></td>
+          <td>Art. 65</td>
+          <td>Ordinárias (conforme calendário aprovado pela Diretoria e homologado pelo Plenário) e Extraordinárias (convocadas pelo coordenador após autorização da Presidência — Art. 68).</td>
+        </tr>
+        <!-- Convocação -->
+        <tr>
+          <td><strong>Prazo de convocação</strong></td>
+          <td>Art. 67</td>
+          <td>A convocação de reunião ordinária deve ser encaminhada com <strong>mínimo de 7 dias</strong> de antecedência, junto com a pauta.</td>
+        </tr>
+        <!-- Ordem dos trabalhos -->
+        <tr>
+          <td><strong>Ordem dos trabalhos</strong></td>
+          <td>Art. 71</td>
+          <td>Sequência obrigatória: (I) verificação do quórum → (II) leitura e aprovação da súmula anterior → (III) extrato de correspondências → (IV) comunicados → (V) ordem do dia → (VI) extrapauta.</td>
+        </tr>
+        <!-- Vista -->
+        <tr>
+          <td><strong>Pedido de vista</strong></td>
+          <td>Art. 75</td>
+          <td>Qualquer membro pode pedir vista do processo. Deve devolver <strong>na mesma reunião ou na subsequente</strong>, com relatório e voto fundamentado. Se não devolver, apresenta razões por escrito que farão parte dos autos.</td>
+        </tr>
+        <!-- Súmula -->
+        <tr>
+          <td><strong>Súmula da reunião</strong></td>
+          <td>Art. 72</td>
+          <td>Registra os assuntos apreciados. Lida e aprovada na reunião <em>subsequente</em>; assinada pelo coordenador e pelos demais membros presentes.</td>
+        </tr>
+        <!-- Atos administrativos -->
+        <tr>
+          <td><strong>Ato administrativo da câmara</strong></td>
+          <td>Art. 64</td>
+          <td>A câmara manifesta-se mediante <strong>Decisão CE/PA</strong> e <strong>Deliberação</strong>, conforme modelos aprovados.</td>
+        </tr>
+        <!-- Encaminhamento ao Plenário -->
+        <tr>
+          <td><strong>Encaminhamento ao Plenário</strong></td>
+          <td>Art. 78</td>
+          <td>As decisões e deliberações da câmara são encaminhadas ao Plenário para <em>conhecimento ou apreciação</em>, conforme o caso.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ─── BLOCO 3 — COORDENADOR ─── -->
+  <div class="sh fade-in" style="margin-top:1.8rem">
+    <div class="st" style="font-size:1rem">👤 Coordenador da Câmara — Competências e Mandato (Arts. 57–62)</div>
+  </div>
+  <div class="form-box fade-in">
+    <table class="ltab">
+      <thead><tr><th>Aspecto</th><th>Artigo</th><th>Regra</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Mandato</strong></td><td>Art. 58</td><td>1 ano — da reunião de instalação da câmara à reunião do ano seguinte. Interrompe-se se o conselheiro concluir seu mandato no período.</td></tr>
+        <tr><td><strong>Eleição</strong></td><td>Art. 59</td><td>Coordenador e coordenador-adjunto eleitos pelos membros da câmara. Homologados e empossados pelo Plenário. Permitida <strong>uma única recondução</strong>.</td></tr>
+        <tr><td><strong>Atribuições-chave</strong></td><td>Art. 60</td><td>Convocar e coordenar reuniões; distribuir processos para relato; proferir voto de minerva; resolver urgências <em>ad referendum</em> da câmara em registros PF/PJ; representar a câmara na Coordenadoria de Câmaras dos CREAs.</td></tr>
+        <tr><td><strong>Substituição</strong></td><td>Arts. 61–62</td><td>Coordenador substituído pelo adjunto em falta, impedimento, licença ou renúncia. Se a renúncia/licença for superior a 4 meses, o adjunto assume em caráter definitivo.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ─── BLOCO 4 — CONSELHEIRO REGIONAL ─── -->
+  <div class="sh fade-in" style="margin-top:1.8rem">
+    <div class="st" style="font-size:1rem">🎖 Conselheiro Regional — Mandato, Deveres e Direitos (Arts. 36–51)</div>
+  </div>
+  <div class="form-box fade-in">
+    <table class="ltab">
+      <thead><tr><th>Aspecto</th><th>Artigo</th><th>Regra</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Mandato</strong></td><td>Art. 40</td><td>3 anos. Limitado a 2 períodos sucessivos (Art. 41).</td></tr>
+        <tr><td><strong>Exercício gratuito</strong></td><td>Art. 39</td><td>A função é gratuita e honorífica.</td></tr>
+        <tr><td><strong>Impedimento</strong></td><td>Art. 43</td><td>Deve comunicar à Presidência com antecedência suficiente para convocação do suplente.</td></tr>
+        <tr><td><strong>Faltas e perda de mandato</strong></td><td>Art. 46</td><td>6 faltas sem justificativa em 12 meses (consecutivas ou não) → abertura de processo administrativo e possível perda de mandato. Inclui reuniões plenárias E de câmaras.</td></tr>
+        <tr><td><strong>Suplente</strong></td><td>Arts. 44–45</td><td>Suplente deve ser da mesma modalidade. Não pode ser convocado se o titular estiver no exercício da função. Pode comparecer apenas como profissional.</td></tr>
+        <tr><td><strong>Dever de relato</strong></td><td>Art. 50 XI / Art. 74</td><td>Deve analisar e relatar processos distribuídos de forma <em>clara, concisa, objetiva e fundamentada</em>, emitindo relatório e voto fundamentado.</td></tr>
+        <tr><td><strong>Impedimento em processo</strong></td><td>Art. 50 X</td><td>Deve dar-se por impedido quando for parte direta ou indiretamente interessada no processo.</td></tr>
+        <tr><td><strong>Certificado de Serviço Relevante</strong></td><td>Art. 51</td><td>Faz jus ao certificado expedido pelo CONFEA quem exercer a função por pelo menos 2/3 do mandato.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ─── BLOCO 5 — PLENÁRIO ─── -->
+  <div class="sh fade-in" style="margin-top:1.8rem">
+    <div class="st" style="font-size:1rem">🏟 Plenário — Segunda Instância (Arts. 6–35)</div>
+  </div>
+  <div class="form-box fade-in">
+    <p style="font-size:.85rem;color:#555;margin-bottom:.8rem">O Plenário é a segunda instância de julgamento. Julga recursos das decisões de câmara. Suas decisões são por <strong>maioria simples</strong>, salvo exceções regimentais. Em empate, o presidente decide (voto de minerva).</p>
+    <table class="ltab">
+      <thead><tr><th>Tema</th><th>Artigo</th><th>Regra</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Quórum do Plenário</strong></td><td>Art. 21</td><td>Número inteiro imediatamente superior à metade da composição.</td></tr>
+        <tr><td><strong>Sessões ordinárias</strong></td><td>Art. 13</td><td>Preferencialmente uma por mês na primeira quinzena, conforme calendário anual aprovado.</td></tr>
+        <tr><td><strong>Convocação ordinária</strong></td><td>Art. 14</td><td>Mínimo de 15 dias de antecedência.</td></tr>
+        <tr><td><strong>Pauta ordinária</strong></td><td>Art. 15</td><td>Mínimo de 7 dias de antecedência.</td></tr>
+        <tr><td><strong>Sessão extraordinária</strong></td><td>Arts. 16–17</td><td>Dentro de 5 dias úteis da convocação; convocada pelo presidente ou por 2/3 dos membros mediante requerimento. Pauta enviada junto com a convocação.</td></tr>
+        <tr><td><strong>Recurso ao CONFEA</strong></td><td>Art. 34</td><td>Da decisão do Plenário do CREA cabe recurso ao CONFEA em <strong>60 dias</strong>, com efeito suspensivo.</td></tr>
+        <tr><td><strong>Cassação — quórum especial</strong></td><td>Art. 9 XXXVI</td><td>Cassação de mandato de presidente ou conselheiro exige voto de no mínimo <strong>2/3</strong> dos membros do Plenário.</td></tr>
+        <tr><td><strong>Divergência entre câmaras</strong></td><td>Art. 9 X</td><td>Compete ao Plenário decidir os casos de divergência entre câmaras especializadas.</td></tr>
+        <tr><td><strong>Ato administrativo</strong></td><td>Art. 10</td><td>O Plenário manifesta-se por <strong>Decisão Plenária</strong>.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ─── BLOCO 6 — COMISSÕES PERMANENTES ─── -->
+  <div class="sh fade-in" style="margin-top:1.8rem">
+    <div class="st" style="font-size:1rem">📋 Comissões Permanentes — Mapa Rápido (Art. 141)</div>
+  </div>
+  <div class="form-box fade-in">
+    <table class="ltab">
+      <thead><tr><th>Sigla</th><th>Nome</th><th>Finalidade principal</th></tr></thead>
+      <tbody>
+        <tr><td><strong>CEP</strong></td><td>Comissão de Ética Profissional</td><td>Instruir processos de infração ao Código de Ética. Composta por ao menos 1 membro de cada câmara. Emite relatório à câmara competente para julgamento.</td></tr>
+        <tr><td><strong>COTC</strong></td><td>Comissão de Orçamento e Tomada de Contas</td><td>Apreciar orçamento, balancetes mensais e prestação de contas anual. Membros da Diretoria não podem integrar a COTC (Art. 97).</td></tr>
+        <tr><td><strong>CRT</strong></td><td>Comissão de Renovação do Terço</td><td>Elaborar a proposta de renovação anual de 1/3 do Plenário. Deve ter ao menos 1 membro de cada câmara.</td></tr>
+        <tr><td><strong>CEAP</strong></td><td>Comissão de Educação e Atribuição Profissional</td><td>Instruir processos de registro profissional e de cadastramento de instituições de ensino. Analisa currículo e projeto pedagógico.</td></tr>
+        <tr><td><strong>CEN</strong></td><td>Comissão de Estudos e Normas</td><td>Elaborar e analisar projetos de atos normativos, regimentos e resoluções. Apreciar projetos de resoluções enviados pelo CONFEA.</td></tr>
+        <tr><td><strong>CMA</strong></td><td>Comissão de Meio Ambiente</td><td>Orientar câmaras em temas ambientais, propor critérios de fiscalização e emitir pareceres em processos ambientais. 1 membro de cada câmara.</td></tr>
+      </tbody>
+    </table>
+    <div class="alt-box az" style="margin-top:.8rem"><span class="ai">💡</span>
+      <p>Todas as comissões permanentes são compostas por <strong>3 conselheiros regionais</strong> eleitos pelo Plenário (mais suplentes), com mandato de 1 ano e permitida uma única reeleição (Art. 144).</p>
+    </div>
+  </div>
+
+  <!-- ─── BLOCO 7 — INSTÂNCIAS E RECURSOS ─── -->
+  <div class="sh fade-in" style="margin-top:1.8rem">
+    <div class="st" style="font-size:1rem">⚖️ Instâncias de Julgamento e Recursos</div>
+  </div>
+  <div class="form-box fade-in">
+    <table class="ltab">
+      <thead><tr><th>Instância</th><th>Órgão</th><th>Prazo de recurso à instância seguinte</th><th>Efeito do recurso</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>1ª Instância</strong></td>
+          <td>Câmara Especializada</td>
+          <td>60 dias da notificação → recurso ao Plenário do CREA (Art. 79)</td>
+          <td>Suspensivo</td>
+        </tr>
+        <tr>
+          <td><strong>2ª Instância</strong></td>
+          <td>Plenário do CREA</td>
+          <td>60 dias da notificação → recurso ao CONFEA (Art. 34)</td>
+          <td>Suspensivo (exceto cassação de mandato)</td>
+        </tr>
+        <tr>
+          <td><strong>Última Instância</strong></td>
+          <td>Plenário do CONFEA</td>
+          <td>Decisão definitiva e irrecorrível</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alt-box am" style="margin-top:.8rem"><span class="ai">⚠️</span>
+      <p><strong>Ponto crítico:</strong> O recurso ao Plenário do CREA <em>não reinicia o processo</em> — o Plenário aprecia os fundamentos do recurso e a decisão da câmara, podendo confirmá-la, modificá-la ou anulá-la (Arts. 9 XIV e 9 XVII). O mesmo vale para o CONFEA em relação ao Plenário do CREA.</p>
+    </div>
+  </div>
+
+  <!-- ─── BLOCO 8 — VEDAÇÕES IMPORTANTES ─── -->
+  <div class="sh fade-in" style="margin-top:1.8rem">
+    <div class="st" style="font-size:1rem">🚫 Vedações Importantes</div>
+  </div>
+  <div class="cgrid fade-in">
+    <div class="card" style="border-left:4px solid var(--lrj)">
+      <div class="ci">🚫</div>
+      <h3>Acumulação de cargos</h3>
+      <p>É vedado ao conselheiro e seu suplente acumular cargo ou função (com ou sem remuneração) no CONFEA, CREA, Mútua ou Caixa de Assistência (Art. 49).</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--lrj)">
+      <div class="ci">🚫</div>
+      <h3>Membro da Diretoria em câmara</h3>
+      <p>É vedado a membro da Diretoria exercer a função de coordenador ou coordenador-adjunto de câmara especializada (Art. 98).</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--lrj)">
+      <div class="ci">🚫</div>
+      <h3>CREA e atribuição profissional</h3>
+      <p>É vedado ao CREA legislar sobre atribuição profissional (Art. 208). Essa competência é exclusiva do CONFEA por meio de resoluções.</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--lrj)">
+      <div class="ci">🚫</div>
+      <h3>Suplente com titular presente</h3>
+      <p>É vedada a convocação ou participação de suplente em sessão, reunião, missão ou evento quando o titular estiver no exercício da função (Art. 45).</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--lrj)">
+      <div class="ci">🚫</div>
+      <h3>Religião e política</h3>
+      <p>É vedado ao CREA manifestar-se sobre assuntos de caráter religioso ou político-partidário (Art. 207).</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--lrj)">
+      <div class="ci">🚫</div>
+      <h3>COTC e Diretoria</h3>
+      <p>Membro da Diretoria não pode pertencer à COTC (Comissão de Orçamento e Tomada de Contas), nem durante o ano seguinte ao término de sua função (Art. 97).</p>
+    </div>
+  </div>
+
+  <!-- ─── BLOCO 9 — PERGUNTAS FREQUENTES ─── -->
+  <div class="sh fade-in" style="margin-top:1.8rem">
+    <div class="st" style="font-size:1rem">❓ Perguntas Frequentes dos Conselheiros</div>
+  </div>
+  <div class="form-box fade-in">
+    <table class="ltab">
+      <thead><tr><th>Dúvida</th><th>Resposta (com referência)</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Qual é o quórum para a câmara funcionar?</strong></td>
+          <td>Número inteiro imediatamente superior à metade da composição da câmara (Art. 70). Ex.: câmara com 5 membros → quórum = 4. O representante do Plenário <em>não</em> conta (Art. 56).</td>
+        </tr>
+        <tr>
+          <td><strong>Posso votar se sou suplente e o titular está presente?</strong></td>
+          <td>Não. O suplente só pode comparecer como profissional quando o titular estiver no exercício da função (Art. 45 §2º).</td>
+        </tr>
+        <tr>
+          <td><strong>Quantas faltas posso ter sem perder o mandato?</strong></td>
+          <td>Até 5 faltas sem justificativa em qualquer período de 12 meses (consecutivas ou não). A 6ª falta sem justificativa abre processo administrativo e pode levar à perda de mandato (Art. 46).</td>
+        </tr>
+        <tr>
+          <td><strong>Posso pedir vista de um processo? Até quando devo devolver?</strong></td>
+          <td>Sim. Qualquer membro pode pedir vista. Deve devolver com relatório e voto fundamentado na mesma reunião ou na subsequente. Se não devolver, apresenta razões por escrito (Arts. 75 e 75 §1º).</td>
+        </tr>
+        <tr>
+          <td><strong>Em caso de empate, quem decide?</strong></td>
+          <td>O coordenador da câmara profere o voto de minerva (Art. 76 §2º). No Plenário, o presidente (Art. 30 §3º).</td>
+        </tr>
+        <tr>
+          <td><strong>Posso votar em processo no qual tenho interesse?</strong></td>
+          <td>Não. O conselheiro deve dar-se por impedido quando for parte direta ou indiretamente interessada (Art. 50 X).</td>
+        </tr>
+        <tr>
+          <td><strong>Qual o prazo para o interessado recorrer da decisão da câmara?</strong></td>
+          <td>60 dias contados do recebimento da notificação pela parte interessada. O recurso vai ao Plenário do CREA e tem efeito suspensivo (Art. 79).</td>
+        </tr>
+        <tr>
+          <td><strong>A câmara pode resolver urgências sem reunião?</strong></td>
+          <td>Sim. O coordenador pode resolver casos de urgência <em>ad referendum</em> da câmara em assuntos de registro de PF ou PJ (Art. 60 XI). O <em>ad referendum</em> deve ser ratificado na próxima reunião.</td>
+        </tr>
+        <tr>
+          <td><strong>Quando a câmara precisa encaminhar ao Plenário?</strong></td>
+          <td>Sempre: as decisões e deliberações são encaminhadas ao Plenário para conhecimento ou apreciação (Art. 78). Além disso: processos de registro de profissional graduado em escola estrangeira (Art. 63 VIII) e assuntos comuns a duas ou mais modalidades (Art. 63 IX).</td>
+        </tr>
+        <tr>
+          <td><strong>O representante do Plenário na câmara pode votar?</strong></td>
+          <td>Não. Tem competência restrita à prestação de informes ao Plenário — sem direito a voto, relato de processo ou participação no quórum (Art. 56).</td>
+        </tr>
+        <tr>
+          <td><strong>Posso ser coordenador da câmara por mais de um mandato?</strong></td>
+          <td>Sim, mas apenas por dois mandatos consecutivos — uma única recondução é permitida (Art. 59).</td>
+        </tr>
+        <tr>
+          <td><strong>O coordenador da câmara pode recusar o convite para representar o CREA em evento externo?</strong></td>
+          <td>Representar o CREA em eventos relacionados à câmara compete ao coordenador <em>sempre que isso lhe for delegado pelo presidente</em> (Art. 60 VI) — não é obrigação autônoma.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ─── BLOCO 10 — LINK PARA TEXTO COMPLETO ─── -->
+  <div class="alt-box az fade-in" style="margin-top:1.6rem"><span class="ai">📖</span>
+    <p><strong>Texto integral do Regimento:</strong> O Regimento do CREA-PA (aprovado em 26/01/2023, assinado pela Eng.ª Civil Adriana Falconeri Rebelo Boy) contém 212 artigos organizados em 7 Títulos. Para consulta ao texto completo, acesse o portal do CREA-PA ou solicite ao setor administrativo da câmara.</p>
+  </div>
+
+</section>
+</div>
+  <strong>CREA-PA — Câmaras Especializadas</strong> · Manual de Boas Práticas 2026
 </footer>
 
 <script>
 // ── MAIN TABS ──
 function switchM(id){
-  ['fund','proc','leg','ana','flu','pra','tax','atr','art','tec','dec'].forEach(t=>{
+  ['fund','proc','leg','ana','flu','pra','tax','atr','art','tec','dec','reg'].forEach(t=>{
     document.getElementById('p-'+t).classList.remove('on');
     document.getElementById('mt-'+t).classList.remove('on');
   });
